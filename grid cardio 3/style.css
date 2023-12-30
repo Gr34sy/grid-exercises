@@ -1,0 +1,24 @@
+
+.albums{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.album{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5 rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.album__artwork{
+    width: 100%;
+}
