@@ -23,13 +23,9 @@
 
   .close {
     background: none;
-    color: white;
+    color: black;
     border: 0;
   }
-
-  .gallery {}
-
-
 
   .overlay {
     position: fixed;
@@ -44,9 +40,11 @@
 
   .overlay.open {
     display: grid;
+    align-items: center;
+    justify-content: center;
   }
 
-  .overlay figure {
+  .overlay-inner {
     background: white;
     width: 700px;
     padding: 20px;
@@ -54,4 +52,71 @@
 
   .overlay img {
     width: 100%;
+  }
+
+/* Grid */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+  }
+
+  .item{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+  }
+
+  .item img{
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .item__overlay{
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    background: #ffc60032;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: 0.8s;
+  }
+
+  .item:hover .item__overlay{
+    transform: translateY(0);
+  }
+
+  .item__overlay button{
+    background: none;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+
+  .item.w2{
+    grid-column: span 2;
+  }
+  .item.w3{
+    grid-column: span 3;
+  }
+  .item.w4{
+    grid-column: span 4;
+  }
+
+  .item.h2{
+    grid-row: span 2;
+  }
+  .item.h3{
+    grid-row: span 3;
+  }
+  .item.h4{
+    grid-row: span 4;
   }
