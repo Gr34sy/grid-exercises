@@ -1,8 +1,10 @@
+import './styles/main.scss';
 import { Header } from './components/Header';
 import { Navbar } from './components/Navbar';
 import { Wrapper } from './components/Wrapper';
 import { Tiles } from './components/Tiles';
-import './styles/main.scss';
+import { Featured } from './components/Featured';
+import { Gallery } from './components/Featured';
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       <Wrapper>
         <Header/>
         <Navbar/>
-        <Tiles />
+        <Tiles/>
+        <Featured/>
+        <Gallery/>
       </Wrapper>
     </div>
   );
