@@ -1,0 +1,12 @@
+button{
+    background-color: $yellow;
+    padding: 10px 20px;
+    border: none;
+    display: block;
+    font-weight: 200;
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}

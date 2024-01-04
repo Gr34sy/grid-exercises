@@ -1,0 +1,25 @@
+.nav{
+}
+
+.nav__button{
+    justify-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.nav__menu{
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 10px;
+}
+
+.menu__item{
+    background-color: $yellow;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    
+}

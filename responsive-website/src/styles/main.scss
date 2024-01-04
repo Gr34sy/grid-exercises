@@ -2,9 +2,13 @@
 @import './utils/normalize.scss';
 @import './utils/variables.scss';
 @import './utils/typography.scss';
+@import './utils/global.scss';
 
 //elements
+@import './elements/button.scss';
+@import './elements/link.scss';
 
 //components
 @import './components/wrapper.scss';
+@import './components/navbar.scss';
 
