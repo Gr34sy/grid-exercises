@@ -1,9 +1,8 @@
 .wrapper{
     font-family: $font-main;
-    line-height: $line-height;
     letter-spacing: $letter-spacing;
     font-weight: 500;
 
     display: grid;
-    gap: 30px;
+    gap: $gap;
 }
