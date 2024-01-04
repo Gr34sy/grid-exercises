@@ -1,9 +1,17 @@
 .nav{
+    order: -1;
+    @media(min-width: 1000px){
+        order: 0;
+    }
 }
 
 .nav__button{
     justify-self: flex-start;
     margin-bottom: 20px;
+
+    @media(min-width: 1000px){
+        display: none;
+    }
 }
 
 .nav__menu{
