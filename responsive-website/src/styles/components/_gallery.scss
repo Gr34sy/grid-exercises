@@ -1,3 +1,21 @@
 .gallery{
     
 }
+
+.gallery__title{
+    font-size: 1.4rem;
+    color: $onyx;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.gallery__pics{
+    display: grid;
+    gap: calc($gap/2);
+    grid-template-columns: repeat(auto-fit, 200px);
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}

@@ -4,7 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Wrapper } from './components/Wrapper';
 import { Tiles } from './components/Tiles';
 import { Featured } from './components/Featured';
-import { Gallery } from './components/Featured';
+import { Gallery } from './components/Gallery';
 
 function App() {
   return (
